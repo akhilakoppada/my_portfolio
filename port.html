@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>/* styles.css */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height:1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+        
+        section {
+            padding: 20px;
+            opacity: 0; /* Initially hide sections */
+            transform: translateY(20px); /* Move sections down */
+            transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+        }
+        
+        section.show {
+            opacity: 1; /* Show sections */
+            transform: translateY(0); /* Move sections to their original position */
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhila Koppada - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>// JavaScript code to add animation effect on scroll
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("scroll", reveal);
+          
+            function reveal() {
+              var sections = document.querySelectorAll("section");
+          
+              for (var i = 0; i < sections.length; i++) {
+                var windowHeight = window.innerHeight;
+                var sectionTop = sections[i].getBoundingClientRect().top;
+                var sectionPoint = 50;
+          
+                if (sectionTop < windowHeight - sectionPoint) {
+                  sections[i].classList.add("show");
+                }
+              }
+            }
+          
+            reveal();
+        });
+        </script>
+    <header>
+        <h1>Akhila Koppada</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#skills">Key Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Highly motivated and adaptable professional committed to delivering excellence in all tasks with dedication to personal and professional development.</p>
+    </section>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>Seeking a challenging position where I can utilize my skills to contribute to the success of the team and organization. I aim to actively contribute to the goals and objectives of the organization while continuously expanding my knowledge and capabilities, committed to delivering high-quality results and fostering a collaborative and innovative work environment.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Proficiency in programming languages C, C++, and Python</li>
+            <li>Strong understanding of OOP concepts and data structures and algorithms</li>
+            <li>Experienced in DBMS and web technologies (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p><strong>Departmental Store Management System</strong><br>
+        Developed in C, efficiently handles inventory, sales, employee management, and customer interactions.</p>
+        <p><strong>Phone Book Management System</strong><br>
+        Developed in C with a doubly linked list, functions as a Phonebook Management System.</p>
+        <p><strong>Employment Management System</strong><br>
+        Employs a LinkedList data structure for streamlined organization and retrieval of employee information.</p>
+        <p><strong>Altair Space Colonization Project</strong><br>
+        Led a team in developing technologies and strategies for establishing sustainable human settlements beyond Earth.</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Python certification from NPTEL</li>
+            <li>Psychology of learning certification from NPTEL</li>
+            <li>IoT certification from ProductKraft</li>
+            <li>Certification for 3D printing workshop for robotics</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Undergraduate</strong><br>
+        SRM University, Andhra Pradesh<br>
+        BTech CSE<br>
+        Current GPA: 8.84</p>
+        <p><strong>Grade 12 (IPE)</strong><br>
+        Sri Chaitanya College, Eluru<br>
+        A Grade</p>
+        <p><strong>GRADE 10 (SSC)</strong><br>
+        Sri Chaitanya school, Eluru<br>
+        10 points</p>
+    </section>
+
+    <footer>
+        <p>Contact: Akhila Koppada | Phone: 9494213392 | Email: k.akhila1901@gmail.com | Place: Kakinada</p>
+    </footer>
+</body>
+</html>
